@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leetmatix</title>
+    <link rel="stylesheet"href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+       <!---- heading
+        user
+        stats-->
+        <h1>LeetMatrix</h1>
+        <div class="user-container">
+            <p>Enter your username below:</p>
+            <div class="user-input-container">
+                <input type="text" placeholder="enter your username here" id="input">
+                <button onclick="searchAnalysis()">search</button>
+            </div>
+            <p style="color: white;" id="output"></p>
+            
+
+        
+        <div class="stats-container">
+        <div class="progress">
+
+            <div class="progress-item ">
+                <div class="easy-progress circle">
+                    <span id="easy"></span>
+                    Easy
+
+                </div>
+            </div>
+            <div class="progress-item ">
+                <div class="medium-progress circle">
+                    <span id="med"></span>
+                    Medium
+                </div>
+            </div>
+            <div class="progress-item circle">
+                <div class="hard-level circle">
+                    <span id="hard"></span>
+                    Hard
+                </div>
+            </div>
+
+
+        </div>
+        <div class="stats-card">
+            <!--directly populate card here from the js code-->
+
+        </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
